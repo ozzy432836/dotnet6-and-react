@@ -1,0 +1,30 @@
+﻿{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:21287",
+      "sslPort": 44331
+    }
+  },
+  "profiles": {
+    "MVCWithReactAsALib": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "applicationUrl": "https://localhost:7094;http://localhost:5094",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
+//ASPNETCORE_ENVIRONMENT to "Development".
+//ASPNETCORE_HOSTINGSTARTUPASSEMBLIES to "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation".

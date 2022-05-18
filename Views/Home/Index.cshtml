@@ -1,0 +1,33 @@
+﻿@model List<MVCWithReactAsALib.Controllers.HomeController.Product>;
+
+
+@{
+    ViewData["Title"] = "Home";
+    var containerId = 1;
+}
+
+<script>
+    //window.sessionStorage.se
+</script>
+
+<div class="row">
+    @foreach(var product in Model)
+    {
+        <div class="col-md-4 mb-3">
+            <div class="p-3 bg-light border  h-100">   
+                <h5>@product.Name</h5>
+                <p>@product.Description</p>
+                <h6>£@(product.Price / 100)</h6>
+                <div class="rb-app" data-product-id="@product.Id" id="rb-prod-@containerId">                                        
+                    <button class="btn btn-outline-secondary btn-sm">-</button>
+                    <input type="number" min="0" value="0" style="width:100px" />
+                    <button class="btn btn-success btn-sm">+</button>
+                </div>
+            </div>            
+        </div>
+        containerId++;
+    }
+
+    <script type="text/babel" src="~/js/react.js">
+    </script>
+</div>
